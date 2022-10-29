@@ -32,6 +32,10 @@ export default {
 
       console.log(res)
     }
+  },
+
+  created() {
+    document.title = 'Delete tweet'
   }
 }
 </script>

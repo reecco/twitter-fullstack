@@ -31,6 +31,10 @@ export default {
 
       console.log(res)
     }
+  },
+
+  created() {
+    document.title = 'Search user'
   }
 }
 </script>

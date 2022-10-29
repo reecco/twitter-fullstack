@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import SendTweet from '../components/SendTweet.vue'
+import Home from '../views/Home/Home.vue'
+import SendTweet from '../components/SendTweet/SendTweet.vue'
 import ViewTweet from '../components/ViewTweet.vue'
 import SearchUser from '../components/SearchUser.vue'
 import DeleteTweet from '../components/DeleteTweet.vue'

@@ -2,8 +2,8 @@ import client from '../config/twitter.js'
 
 class TwitterController {
   static sendTweet(req, res) {
-
     let tweet = req.body.tweet
+    
     client.post('statuses/update', { status: tweet }).then(result => {
       res.status(200).json({ message: 'Tweet sent successfully.', tweet: result.text, status: 200 })
     }).catch(error => {

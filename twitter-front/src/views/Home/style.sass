@@ -1,0 +1,45 @@
+@import '@/assets/sass/_variables.sass'
+  
+.home
+  margin-top: 5%
+  
+  &-title
+    font-size: $h1-size
+    font-weight: $h1-weight
+    text-shadow: 1px 1px 2px #FEFEFE
+    text-align: center
+    color: #FEFEFE
+
+  &-box
+    margin-top: 5%
+    display: flex
+    justify-content: center
+    
+    .list
+      display: flex
+      flex-wrap: wrap
+      list-style-type: none
+      width: 480px
+      
+      .item
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 20px
+        width: 200px
+        height: 100px
+        background-color: $bg-color-main
+        text-align: center
+        border-radius: 10px
+        border: 2px solid #38444d
+        transition: .2s
+
+        &:hover
+          // background-color: #15202b
+          opacity: 0.3
+
+        .link
+          width: 200px
+          color: #FEFEFE
+          font-size: 1.5rem
+          text-decoration: none

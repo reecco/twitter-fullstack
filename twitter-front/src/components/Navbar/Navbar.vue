@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="icon__home">
-      <router-link class="link" to="/">Icon Home</router-link>
+      <router-link class="link" to="/"><img class="icon" src="@/assets/images/home.png" alt="Home image"></router-link>
     </div>
     <nav>
       <router-link class="link" to="/send">Send tweet</router-link>
