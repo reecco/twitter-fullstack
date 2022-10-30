@@ -37,12 +37,6 @@
       display: flex
       justify-content: flex-end
 
-    .btn-send
-      cursor: pointer
-
-      &:hover
-        opacity: 0.7
-
     .btn-send, .btn-send--opacity
       padding: 10px 50px
       border-radius: 20px
@@ -53,7 +47,17 @@
       font-weight: 600
       transition: .2s
 
+    .btn-send
+      cursor: pointer
+
+      &:hover
+        opacity: 0.7
+
     .btn-send--opacity
       opacity: 0.3
-
-      &:disabled
+      -webkit-user-select: none
+      -khtml-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      -o-user-select: none
+      user-select: none

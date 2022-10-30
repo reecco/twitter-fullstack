@@ -1,0 +1,61 @@
+@import '@/assets/sass/_variables.sass'
+
+.form__box
+  margin-top: 5%
+  display: flex
+  flex-direction: column
+  // justify-content: center
+  align-items: center
+
+  &-title
+    font-size: $h1-size
+    font-weight: $h1-weight
+    text-shadow: 1px 1px 2px #FEFEFE
+    color: #FEFEFE
+
+  .form
+    margin-top: 5%
+    display: flex
+    flex-direction: column
+
+    .message
+      margin: 10px
+      color: #1d9bf0
+
+    #tweet
+      font-size: 1.3rem
+      color: #FEFEFE
+      border: 2px solid #38444d
+      border-radius: 10px
+      padding: 10px
+      width: 600px
+
+    .button-box
+      display: flex
+      justify-content: flex-end
+      margin-top: 3%
+
+      .btn-send, .btn-send--opacity
+        font-size: 1.3rem
+        padding: 10px 50px
+        color: #FEFEFE
+        font-weight: 600
+        background-color: #1d9bf0
+        border-radius: 20px
+        border: none
+        transition: .2s
+
+      .btn-send
+        cursor: pointer
+
+        &:hover
+          opacity: 0.7
+
+      .btn-send--opacity
+        opacity: 0.3
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        -o-user-select: none
+        user-select: none

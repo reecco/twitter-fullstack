@@ -1,9 +1,12 @@
 <template>
-  <div class="hello">
-    <h1>Search user</h1>
-    <form @submit="searchUser">
-      <input type="text" name="tweet" id="tweet" v-model="user">
-      <button>Search</button>
+  <div class="form__box">
+    <h1 class="form__box-title">Search user</h1>
+    <form class="form" @submit="searchUser">
+      <input type="text" name="user" id="user" v-model="user">
+      <div class="button-box">
+        <p v-if="user == '' || user == ' '" class="btn-search--opacity" id="btn-send">Search</p>
+        <button v-else class="btn-search">Search</button>
+      </div>
     </form>
   </div>
 </template>
@@ -39,6 +42,4 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-
-</style>
+<style src="./style.sass" lang="sass" scoped></style>
